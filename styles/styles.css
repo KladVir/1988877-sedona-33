@@ -1,22 +1,21 @@
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/ptsans-400.woff2") format("woff2");
-    font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/ptsans-700.woff2") format("woff2");
-    font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
 }
 
 .body-container {
   width: 1200px;
-  margin-left: 35px;
   display: flex;
   flex-direction: column;
   color: white;
@@ -37,13 +36,14 @@ html {
 
 .page-body,
 .hotels-body {
-    min-height: 100%;
-    font-family: "PT Sans";
-    width: 1200px;
-    font-size: 24px;
-    line-height: 28px;
-    background:#E5E5E5;
-    color: #FFFFFF;
+  min-height: 100%;
+  font-family: "PT Sans";
+  width: 1200px;
+  font-size: 24px;
+  line-height: 28px;
+  background:#E5E5E5;
+  color: #FFFFFF;
+  margin: auto;
 }
 
 .hotels-page {
@@ -64,7 +64,7 @@ html {
   justify-content: space-between;
   color: #242424;
   background:#ffffff;
-  padding: 0 70px;
+  padding: 0;
 }
 
 .navigation-logo {
@@ -72,6 +72,7 @@ html {
   display: block;
   line-height: 1;
   z-index: 1;
+  margin-left: 70px;
 }
 
 .navigation {
@@ -104,13 +105,17 @@ li {
 }
 
 .navigation-element {
-    margin: 0 17px;
-    padding: 11px 0 20px 0;
-    border-bottom: 1px solid red;
+  margin: 0 17px;
+  padding: 11px 0 20px 0;
+  border-bottom: 1px solid red;
 }
 
 .navigation-user-element {
   margin: 0 17px;
+}
+
+.navigation-user-element:nth-child(3) {
+  margin-right: 70px;
 }
 
 .navigation-link {
@@ -235,7 +240,7 @@ li {
   height: 60px;
   border-radius: 10px;
   margin-left: 290px;
-  margin-top: 30px;
+  margin-top: 84px;
   font-weight: 700;
   background-color: #83B3D3;
   text-decoration: none;
@@ -271,7 +276,6 @@ li {
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
-  
 }
 
 .in-favourites {
@@ -297,6 +301,7 @@ li {
 
 .hotels-on-page {
   color: #000000;
+  margin-right: 51px;
 }
 
 .list-item {
@@ -405,6 +410,7 @@ li {
 .prices-from {
   background: none;
   border: 2px solid #FFFFFF;
+  border-radius: 4px;
   text-align: end;
   border-collapse: collapse;
   height: 48px;
@@ -414,6 +420,7 @@ li {
   background: none;
   text-align: end;
   border: 2px solid #FFFFFF;
+  border-radius: 4px;
   border-left: none;
   border-collapse: collapse;
   height: 48px;
@@ -533,16 +540,20 @@ variables-and-pagination {
   height: 55px;
   width: 1200px;
   background-color: #ffffff;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .options-variables {
   display: flex;
-  width: 420px;
+  background-color: #ffffff;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .pagination {
   display: flex;
-  width: 420px;
+  background-color: #ffffff;
 }
 
 .list-number {
@@ -585,10 +596,14 @@ variables-and-pagination {
   display: flex;
   flex-direction: column;
   margin-right: 18px;
-  margin-top: 56px;
+  margin-top: 36px;
   margin-left: 20px;
   list-style: none;
   padding: 20px;
+}
+
+.places-list-item:nth-child(4n) {
+  margin-top: 10px;
 }
 
 .places-list-item:nth-child(3n) {
@@ -600,7 +615,11 @@ variables-and-pagination {
   font-size: 30px;
   line-height: 39px;
   text-transform: uppercase;
-  padding-left: 71px;
+  padding: 0;
+  margin-top: 50px;
+  margin-left: 71px;
+  margin-right: 150px;
+  margin-bottom: 0;
   background-color: #ffffff;
   color: #000000;
   font-weight: 700;
@@ -640,6 +659,11 @@ variables-and-pagination {
 }
 
 .stars {
+  display: flex;
+  width: 93px;
+}
+
+.star {
   margin-top: 26px;
   padding-right: 7px;
 }
@@ -656,6 +680,48 @@ variables-and-pagination {
   margin-top: 16px;
   margin-left: 49px;
 }
+
+.sort-by {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  padding: 0;
+  padding-right: 71px;
+}
+
+.options-by {
+  display: flex;
+  width: 287px;
+  height: 48px;
+  margin-top: 44px;
+  margin-right: 81px;
+}
+
+.list-visuals-group {
+  display: flex;
+  margin-top: 44px;
+}
+
+.list-visual-1 {
+  border: 3px solid #000000;
+  padding: 16px 17px;
+  margin-right: 8px;
+  border-radius: 3px;
+}
+
+.list-visual-2,
+.list-visual-3 {
+  border: 3px solid gainsboro;
+  padding: 16px 17px;
+  margin-right: 8px;
+  border-radius: 3px;
+}
+
+.list-vusual:nth-child(3) {
+  margin-right: 0;
+}
+
 
 .subscribe-section {
   display: flex;
