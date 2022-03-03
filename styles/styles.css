@@ -115,10 +115,6 @@ li {
   margin: 0 17px;
 }
 
-.navigation-user-element:nth-child(2) {
-  
-}
-
 .navigation-user-element:nth-child(3) {
   margin-right: 70px;
 }
@@ -766,7 +762,6 @@ li {
 .list-vusual:nth-child(3) {
   margin-right: 0;
 }
-
 
 .subscribe-section {
   display: flex;
