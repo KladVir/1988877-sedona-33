@@ -64,7 +64,9 @@
 							<a href="../Sedona/images/home.svg" width="12" height="11.7" alt="Домой">
 							</a>
 						</li>
-						<li class="breadcrumps-item">Гостиницы</li>
+						<li class="breadcrumps-item">
+							<a href="index.html">Главная</a>
+						</li>
 				</ul>
 				</div>
 			</div>
@@ -74,18 +76,18 @@
 					<span class="filter-option">Инфраструктура:</span>
 					<div class="options-checkboxes">
 						<div class="options-item-checkbox">
-	 						<label for="infrastructure-field"></label>
-	   						<input class="big-checkbox" type="checkbox" name="pool" id="infrastructure-field" checked>
+	   						<input class="big-checkbox" type="checkbox" id="infrastructure-field" name="pool" checked>
+							<label for="infrastructure-field"></label>
 							<span class="checkbox-description">Бассейн</span>
 						</div>
 						<div class="options-item-checkbox">
-			 				<label for="infrastructure-field"></label>
-			 				<input class="big-checkbox" type="checkbox" name="parking" id="infrastructure-field" checked>
+			 				<input class="big-checkbox" type="checkbox" id="infrastructure-field" name="parking" checked>
+							<label for="infrastructure-field"></label>
 							<span class="checkbox-description">Парковка</span>
 						</div>
 						<div class="options-item-checkbox">
-	   	 	  			<label for="infrastructure-field"></label>
-	  	 	  			<input class="big-checkbox" type="checkbox" name="Wi-Fi" id="infrastructure-field">
+	  	 	  			<input class="big-checkbox" type="checkbox" id="infrastructure-field" name="Wi-Fi">
+						<label for="infrastructure-field"></label>
 						<span class="checkbox-description">Wi-Fi</span>
 						</div>
 					</div>
@@ -93,24 +95,24 @@
 			<div class="options-staying-place">
 				<span class="filter-option">Тип жилья:</span>
 				<div class="options-item-radio">
-	 		   		<label for="staying-place-type"></label>
 	  		   		<input class="big-radio" type="radio" name="staying-place-type" name="staying-place-type" value="hotel" checked>
+					<label for="staying-place-type"></label>
 					<span class="radio-description">Гостиница</span> 
 				</div>
 				<div class="options-item-radio">
-	   		   		<label for="staying-place-type"></label>
 	  		   		<input class="big-radio" type="radio" name="staying-place-type" name="staying-place-type" value="motel">
+					<label for="staying-place-type"></label>
 					<span class="radio-description">Мотель</span>
 				</div>
 				<div class="options-item-radio">
-	   		   		<label for="staying-place-type"></label>
 	  		   		<input class="big-radio" type="radio" name="staying-place-type" name="staying-place-type" value="appartaments">
+					<label for="staying-place-type"></label>
 					<span class="radio-description">Аппартаменты</span>
 				</div>
 			</div> 	
 	    	<p class="prices visually-hidden">Цены</p>
 	    	<div class="options-item-cost-range">
-				<label for="price-range">Стоимость,р:</label>
+				<label class="price-range" for="price-range">Стоимость,р:</label>
 				<div class="options-cost-input">
 					<input class="prices-from" type="text" name="from" size="10" placeholder="от">
 	    			<input class="prices-to" type="text" name="to" size="10" placeholder="до">
@@ -336,7 +338,7 @@
 			<p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
 			<form class="email-subscription" action="https://google.com" method="post">
 		  		<label for="subscription-email"></label> 
-		  		<input class="subscription-field" placeholder="Ваш e-mail" type="email" name="subscribtion-email" id="subscribtion-email" required>
+		  		<input class="subscription-field" placeholder="  Ваш e-mail" type="email" name="subscribtion-email" id="subscribtion-email" required>
 		  		<a class="button-subscribe" type="submit" href="#">Подписаться</a>
 			</form>
 	  	</section>

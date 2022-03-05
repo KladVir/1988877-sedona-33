@@ -88,6 +88,7 @@ html {
   margin: 0;
   align-items: center;
   padding-left: 30px;
+  padding-bottom: 2px;
 }
 
 .navigation-user {
@@ -98,6 +99,7 @@ html {
   margin: 0;
   margin-right: 23px;
   width: 100%;
+  padding-bottom: 2px;
 }
 
 li {
@@ -296,6 +298,11 @@ li {
   text-decoration: none;
 }
 
+.navigation-user-link-search {
+  line-height: 1;
+  display: block;
+}
+
 .in-favourites {
   display: flex;
   justify-content: center;
@@ -402,6 +409,44 @@ li {
   font-size: 18px;
 }
 
+.options-item-checkbox input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.options-item-checkbox label {
+  position: relative;
+  cursor: pointer;
+}
+
+.options-item-checkbox:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: #ffffff;
+  border: 2px solid;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.options-item-checkbox input:checked +label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border: solid #0079bf;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
 .options-item-radio {
   padding-bottom: 13px;
   font-size: 18px;
@@ -454,6 +499,7 @@ li {
 .price-range {
   display: flex;
   justify-content: flex-start;
+  font-weight: 700;
 }
 
 .price-range-line {
@@ -487,13 +533,16 @@ li {
 .subscription-field {
   height: 60px;
   width: 600px;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  background-color: #F2F2F2;
 }
 
 .button-subscribe {
   display: flex;
   font-weight: 700;
   width: 200px;
-  height: 64px;
+  height: 62px;
   background-color: #83B3D3;
   color: #ffffff;
   text-transform: uppercase;
@@ -501,6 +550,8 @@ li {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .breadcrumps {
@@ -554,6 +605,7 @@ li {
   line-height: 21px;
   background-color: #83B3D3;
   color: #ffffff;
+  border: none;
   font-size: 16px;
   width: 160px;
   height: 48px; 
