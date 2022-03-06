@@ -130,14 +130,40 @@
 
     <div class="popup-hotel">
       <div class="popup-hotel-content">
+        <div class="popup-content-search-and-close">
         <span class="popup-search-sedona">Поиск гостиницы в Седоне</span>
+        <button class="close-popup">Кнопка Закрыть</button>
+        </div>
+        <form class="popup-search-criteria" action="https://echo.htmlacademy.ru/courses" method="post">
+          <div class="arrival-departure-block">
+            <div class="popup-form-block-arrival">
+              <label class="popup-search-label" for="popup-form-arrival">Дата заезда:</label>
+              <input class="popup-search-input" type="date" name="popup-form-arrival" id="popup-form-arrival">
+            </div>
+            <div class="popup-form-block-departure">
+              <label class="popup-search-label" for="popup-form-date-departure">Дата выезда:</label>
+              <input class="popup-search-input" type="date" name="popup-form-date-departure" id="popup-form-date-departure">
+            </div>
+          </div>
+          <div class="popup-search-adults-kids">
+            <div class="popup-search-adults">
+              <label class="popup-search-label-adults" for="popup-search-label">Взрослые:</label>
+              <input class="popup-search-input-adults" type="number" name="popup-form-adults" id="popup-form-adults">
+            </div>
+            <div class="popup-search-kids">
+              <label class="popup-search-label-kids" for="popup-form-label">Дети:</label>
+              <input class="popup-search-input-kids" type="number" name="popup-form-kids" id="popup-form-kids">
+            </div>
+          </div>
+              <button class="popup-search-button">Найти</button>
+        </form>
       </div>
     </div>
   
     <section class="subscribe-section">
       <h2 class="subscribe">Подпишитесь на рассылку</h2>
       <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-      <form class="email-subscription" action="https://google.com" method="post">
+      <form class="email-subscription" action="https://echo.htmlacademy.ru/courses" method="post">
         <label for="subscription-email"></label> 
         <input class="subscription-field" placeholder="  Ваш e-mail" type="email" name="subscribtion-email" id="subscribtion-email" required>
         <a class="button-subscribe" type="submit" href="#">Подписаться</a>

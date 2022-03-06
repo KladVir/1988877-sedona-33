@@ -140,25 +140,24 @@ li {
 }
 
 .favourites-amount {
-  position: relative;
-  left: -12px;
-  top: -12px;
-  font-size: 10px;
-  padding: 4px;
-  width: 19px;
-  background-color: #7DB54F;
-  color: #ffffff;
-  border-radius: 50%;
-  
+position: relative;
+left: -12px;
+top: -12px;
+font-size: 10px;
+padding: 4px;
+width: 19px;
+background-color: #7DB54F;
+color: #ffffff;
+border-radius: 50%; 
 }
 
 .svg-sedona {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../images/index-background.jpg");
-  background-repeat: no-repeat;
-  height: 485px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: url("../images/index-background.jpg");
+background-repeat: no-repeat;
+height: 485px;
 }
 
 .sedona-description {
@@ -828,26 +827,95 @@ li {
   padding-right: 30px;
 }
 
+
 .popup-hotel {
-  width: 100%;
-  min-height: 100%;
   background-color: rgba(0,0,0,0.5);
-  overflow: hidden;
   position: fixed;
   top: 0px;
-}
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  }
 
-.popup-hotel .popup-hotel-content {
+  .popup-hotel .popup-hotel-content {
+  position: absolute;
   margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   width: 715px;
   height: 561px;
   padding: 10px;
   border-radius: 30px;
   background-color: #ffffff;
+  color: #000;
   box-shadow: 0px 0px 10px #000;
+  }
+
+  .popup-search-sedona {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 62px;
+    width: 499px;
+    height: 67px;
+  }
+
+.popup-content-search-and-close {
+  display: flex;
 }
-.popup-search-sedona {
-  text-transform: uppercase;
-  color: #000000;
-  font-weight: 700;
+
+.popup-search-criteria {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+.arrival-departure-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.popup-form-block-arrival,
+.popup-form-block-departure {
+  display: flex;
+  padding-top: 35px;
+  align-items: center;
+}
+
+.popup-search-label {
+  margin-right: 19px;
+  width: 155px;
+  text-align: left;
+}
+
+.popup-search-input {
+  width: 420px;
+}
+
+.popup-search-adults-kids {
+  display: flex;
+
+}
+
+.popup-search-input-adults,
+.popup-search-input-kids {
+  display: flex;
+  width: 133px;
+}
+
+.popup-search-button {
+  display: block;
+  width: 575px;
+  height: 60px;
+  justify-content: center;
+  margin-top: 40px;
 }
