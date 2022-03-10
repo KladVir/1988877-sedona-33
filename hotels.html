@@ -26,7 +26,7 @@
 				<li class="navigation-element">
 				  <a class="navigation-link" href="#">О Седоне</a></li>
 				<li class="navigation-element">
-				  <a class="navigation-link" href="hotels.html">Гостиницы</a></li>
+				  <a class="navigation-link navigation-hotels-current" href="hotels.html">Гостиницы</a></li>
 			  </ul>
 			  <ul class="navigation-user">
 				<li class="navigation-user-element">
@@ -109,8 +109,9 @@
 					<label for="staying-place-type"></label>
 					<span class="radio-description">Аппартаменты</span>
 				</div>
-			</div> 	
-	    	<p class="prices visually-hidden">Цены</p>
+			</div> 
+		<fieldset class="range-options">
+	    	<span class="prices visually-hidden">Цены</span>
 	    	<div class="options-item-cost-range">
 				<label class="price-range" for="price-range">Стоимость,р:</label>
 				<div class="options-cost-input">
@@ -119,6 +120,7 @@
 				</div>
 	  				<input class="price-range-line" type="range" name="price-range" id="price-range" min="0" max="10000" step="1">
 			</div>
+		</fieldset>
 				<div class="apply-reset-buttons">
 	    			<button class="button-apply" type="submit" href="#">Применить</button>
 	    			<button class="button-reset" type="reset" href="#">Сбросить</button>
@@ -245,7 +247,7 @@
 					</div>
 					<div class="favourites-and-expand">
 			 			<a class="expand-item-list" href="#">Подробнее</a>
-						<a class="in-favourites" href="#">В избранное</a>
+						<a class="in-favourites-added" href="#">В избранном</a>
 					</div>
 					<div class="stars-and-rating">
 						<div class="stars">
@@ -333,7 +335,7 @@
 				</select>
 			</div>
 		</div>
-	   	<section class="subscribe-section">
+	   	<section class="subscribe-section-hotels">
 			<h2 class="subscribe">Подпишитесь на рассылку</h2>
 			<p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
 			<form class="email-subscription" action="https://echo.htmlacademy.ru/courses" method="post">
@@ -369,12 +371,12 @@
 			</li>
 	 	</ul>
     <div class="company-tel">
-		<a href="tel:+78128121212">+7(812)812-12-12</a>
-    </div>
+		<a class="company-tel-link" href="tel:78128121212">+7 (812) 812-12-12</a>
+	</div>
     <div class="html-academy">
 		<a class="html-academy-logo" href="https://htmlacademy.ru" target="_blank">
 			<img 
-				src="images/logo_htmlacademy.png"
+				src="images/logo_htmlacademy.svg"
 				width="155"
 				height="34"
 				alt="html-академия">
